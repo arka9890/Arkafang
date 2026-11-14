@@ -1,0 +1,14 @@
+{
+  "files": [
+    "ubuntu-aarch64.tar.xz",
+    "openfang-aarch64.tar.gz",
+    "sha256sums.txt",
+    "setup.env"
+  ],
+  "mirrors": [
+    { "name": "official",        "base": "https://openfang.sh/env/" },
+    { "name": "github-releases", "base": "https://github.com/arka9890/openfang-android/releases/download/v0.6.9/" },
+    { "name": "user",            "base": "" }
+  ],
+  "openfangTag": "v0.6.9"
+}

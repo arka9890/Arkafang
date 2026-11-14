@@ -1,0 +1,14 @@
+# OpenFang Android — GitHub Secrets (4 required)
+#
+# Before the first CI build, set these in your repo's Settings → Secrets:
+#
+#   APK_SIGNING_KEY      base64-encoded .jks keystore
+#                        (generate with: keytool -genkeypair -alias openfang \
+#                           -keyalg RSA -keysize 2048 -validity 10000 \
+#                           -keystore keystore.jks -storepass <pw> -keypass <pw>)
+#   KEY_ALIAS            e.g. "openfang"
+#   KEY_STORE_PASSWORD   the -storepass from keytool
+#   KEY_PASSWORD         the -keypass from keytool
+#
+# Without these, the workflow still builds the debug APK (unsigned) and
+# uploads it as an artifact — but you'll want to sign for sideload.

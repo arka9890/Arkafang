@@ -1,0 +1,24 @@
+# keystore.jks (binary, do NOT commit — GitHub Secrets hold it)
+keystore.jks
+
+# password + alias files (do NOT commit)
+keystore.password
+key.password
+keystore.alias
+
+# base64 of the keystore (used to bootstrap GitHub Secrets)
+# DO NOT commit — it's a copy of the keystore in text form.
+keystore.jks.b64
+
+# build outputs
+build/
+app/build/
+core/proot/build/
+core/openfang-api/build/
+*.iml
+.gradle/
+local.properties
+
+# scratch / scratchpad
+.superpowers/
+.kotlin/

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenFang</string>
+    <string name="status_running">Running</string>
+    <string name="status_stopped">Stopped</string>
+    <string name="action_start">Start</string>
+    <string name="action_stop">Stop</string>
+    <string name="setup_title">Set up OpenFang</string>
+    <string name="setup_download">Downloading environment…</string>
+    <string name="setup_unpack">Unpacking…</string>
+    <string name="setup_done">Ready</string>
+</resources>

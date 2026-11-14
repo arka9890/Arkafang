@@ -1,0 +1,329 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0b1326;color:#dae2fd;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"background":"#0b1326","on-secondary":"#3c0091","primary-container":"#8083ff","error-container":"#93000a","on-tertiary":"#00354a","surface-variant":"#2d3449","outline-variant":"#464554","on-tertiary-container":"#002d40","on-primary-fixed":"#07006c","on-secondary-fixed-variant":"#5516be","surface-container-lowest":"#060e20","surface-container-high":"#222a3d","on-error-container":"#ffdad6","on-surface":"#dae2fd","on-tertiary-fixed-variant":"#004c69","surface-container-low":"#131b2e","surface":"#0b1326","on-secondary-container":"#c4abff","on-tertiary-fixed":"#001e2c","surface-container-highest":"#2d3449","tertiary-fixed-dim":"#7bd0ff","surface-container":"#171f33","inverse-on-surface":"#283044","on-background":"#dae2fd","primary-fixed-dim":"#c0c1ff","secondary-fixed":"#e9ddff","surface-dim":"#0b1326","tertiary":"#7bd0ff","secondary-container":"#571bc1","inverse-primary":"#494bd6","on-secondary-fixed":"#23005c","primary":"#c0c1ff","on-primary-fixed-variant":"#2f2ebe","tertiary-fixed":"#c4e7ff","error":"#ffb4ab","on-error":"#690005","tertiary-container":"#009bd1","primary-fixed":"#e1e0ff","surface-bright":"#31394d","inverse-surface":"#dae2fd","on-surface-variant":"#c7c4d7","secondary-fixed-dim":"#d0bcff","on-primary-container":"#0d0096","on-primary":"#1000a9","secondary":"#d0bcff","surface-tint":"#c0c1ff","outline":"#908fa0"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","gutter":"1rem","margin":"1rem","space-lg":"1.25rem","space-md":"0.75rem","space-xl":"2rem"},"fontFamily":{"label-md":["JetBrains Mono"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["JetBrains Mono"],"body-lg":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["30px",{"lineHeight":"38px","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"21px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Open Drawer Navigation" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors focus:outline-none"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex items-center gap-space-xs"><img alt="AI Chat Spark Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf2-t4N6VBzA0Z9NSqx1XE8pSmkn2GqRIMl-Ol-pAB419ZlPqDmcFbSLMaGSNoLG2DHOj0Ks7whYGPEaeD0HD5f9M0daYHypDtzk_mdZqeowVVBPuO5rmUVV6gHJ0WVi-dAtee-wzp49fWljV5-LwxX_-QWthzhUz7g55NhE4HA_Gxd1vUELNOU64WpS8g6rH_TORUiqXLaB0OwKXU3e_fN2419FEYW5v4iW5C_WE"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight leading-none">Synthetica AI</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium leading-none mt-1">Provider</span></div></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-20 bg-surface px-margin"><div class="flex flex-col w-full pb-6 space-y-4">
+<!-- Active Provider Spotlight Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high p-4 shadow-xl">
+<div class="absolute -right-10 -top-10 w-36 h-36 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between gap-3 relative z-10">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[26px]">psychology</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<p class="font-label-sm text-label-sm text-tertiary tracking-wide uppercase">Provider Utama Aktif</p>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate font-bold">Claude 3.5 Sonnet</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Anthropic Cloud • Konteks 200k</p>
+</div>
+</div>
+<button aria-label="Ganti Provider Cepat" class="px-3 py-2 rounded-lg bg-surface-variant text-on-surface-variant hover:text-primary hover:bg-surface-bright transition-all active:scale-95 shrink-0 flex items-center gap-1 shadow-sm">
+<span class="font-label-md text-label-md">Ganti</span>
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+</div>
+<!-- Live Telemetry Bar -->
+<div class="mt-4 pt-3 grid grid-cols-2 gap-2 bg-surface-container-lowest/60 p-2.5 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">bolt</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Latensi Rata-rata</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold">184 ms</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">account_balance_wallet</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Sisa Saldo Kredit</p>
+<p class="font-label-md text-label-md text-tertiary font-semibold">$24.50</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quota / Credit Summary Banner -->
+<div class="rounded-xl bg-surface-container p-3.5 flex items-center justify-between gap-3 shadow-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">donut_large</span>
+</div>
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium">Batas Token Bulanan</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Terpakai 1.42M / 5.00M (28%)</p>
+</div>
+</div>
+<div class="w-16 bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 28%"></div>
+</div>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+<button class="filter-btn px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shrink-0 shadow-sm transition-colors" data-filter="all">Semua</button>
+<button class="filter-btn px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors" data-filter="connected">Terhubung</button>
+<button class="filter-btn px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors" data-filter="cloud">Cloud AI</button>
+<button class="filter-btn px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors" data-filter="local">Lokal (Ollama)</button>
+</div>
+<!-- Provider List -->
+<div class="flex flex-col space-y-3" id="provider-container">
+<!-- Anthropic Card -->
+<div class="provider-card p-4 rounded-xl bg-surface-container shadow-md flex flex-col gap-3 transition-transform active:scale-[0.99]" data-status="connected" data-type="cloud">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">cognition</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Anthropic</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/15 text-tertiary font-label-sm text-label-sm">Terhubung</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Claude 3.5 Sonnet, Claude 3 Opus</p>
+</div>
+</div>
+<!-- Switch Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span> 184ms
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">hub</span> 2 Model Aktif
+          </span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center gap-1 text-label-md font-label-md active:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-[16px]">key</span>
+<span>Edit Kunci</span>
+</button>
+</div>
+</div>
+<!-- OpenAI Card -->
+<div class="provider-card p-4 rounded-xl bg-surface-container shadow-md flex flex-col gap-3 transition-transform active:scale-[0.99]" data-status="connected" data-type="cloud">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">smart_toy</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">OpenAI</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/15 text-tertiary font-label-sm text-label-sm">Terhubung</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">GPT-4o, GPT-4o mini, o1-preview</p>
+</div>
+</div>
+<!-- Switch Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span> 235ms
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">hub</span> 3 Model Aktif
+          </span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center gap-1 text-label-md font-label-md active:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-[16px]">key</span>
+<span>Edit Kunci</span>
+</button>
+</div>
+</div>
+<!-- Google DeepMind Card -->
+<div class="provider-card p-4 rounded-xl bg-surface-container shadow-md flex flex-col gap-3 transition-transform active:scale-[0.99]" data-status="connected" data-type="cloud">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[24px]">auto_awesome</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Google AI</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/15 text-tertiary font-label-sm text-label-sm">Terhubung</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Gemini 1.5 Pro, Gemini 1.5 Flash</p>
+</div>
+</div>
+<!-- Switch Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span> 210ms
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">hub</span> 2 Model Aktif
+          </span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center gap-1 text-label-md font-label-md active:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-[16px]">key</span>
+<span>Edit Kunci</span>
+</button>
+</div>
+</div>
+<!-- DeepSeek Card -->
+<div class="provider-card p-4 rounded-xl bg-surface-container shadow-md flex flex-col gap-3 transition-transform active:scale-[0.99]" data-status="pending" data-type="cloud">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[24px]">explore</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">DeepSeek</h3>
+<span class="px-2 py-0.5 rounded-full bg-error-container/30 text-error font-label-sm text-label-sm">Perlu API Key</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">DeepSeek V3, DeepSeek R1</p>
+</div>
+</div>
+<!-- Switch Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">speed</span> --
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">lock</span> Belum Terpasang
+          </span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary flex items-center gap-1 text-label-md font-label-md active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Setel Kunci</span>
+</button>
+</div>
+</div>
+<!-- Ollama (Local AI) Card -->
+<div class="provider-card p-4 rounded-xl bg-surface-container shadow-md flex flex-col gap-3 transition-transform active:scale-[0.99]" data-status="connected" data-type="local">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed shrink-0">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ollama Local</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/15 text-tertiary font-label-sm text-label-sm">Terhubung</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Llama 3.3 70B, Mistral Nemo, Qwen 2.5</p>
+</div>
+</div>
+<!-- Switch Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span> 42ms (Lokal)
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">lan</span> http://192.168.1.11
+          </span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center gap-1 text-label-md font-label-md active:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-[16px]">dns</span>
+<span>Endpoint</span>
+</button>
+</div>
+</div>
+<!-- OpenRouter Card -->
+<div class="provider-card p-4 rounded-xl bg-surface-container shadow-md flex flex-col gap-3 transition-transform active:scale-[0.99]" data-status="pending" data-type="cloud">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary-fixed shrink-0">
+<span class="material-symbols-outlined text-[24px]">alt_route</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">OpenRouter</h3>
+<span class="px-2 py-0.5 rounded-full bg-error-container/30 text-error font-label-sm text-label-sm">Perlu API Key</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Agregator Multimodel AI (200+ Model)</p>
+</div>
+</div>
+<!-- Switch Toggle -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input class="sr-only peer" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">speed</span> --
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">lock</span> Belum Terpasang
+          </span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary flex items-center gap-1 text-label-md font-label-md active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Setel Kunci</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Add Custom Provider Action -->
+<div class="pt-2">
+<button class="w-full py-3.5 px-4 rounded-xl bg-surface-container-high hover:bg-surface-bright text-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-lg active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+<span>Tambah Custom Provider / API</span>
+</button>
+</div>
+<!-- Interactive Filtering Script -->
+<script>
+    (function() {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.provider-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+          });
+
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+
+          cards.forEach(card => {
+            const type = card.getAttribute('data-type');
+            const status = card.getAttribute('data-status');
+
+            if (filter === 'all') {
+              card.style.display = 'flex';
+            } else if (filter === 'connected') {
+              card.style.display = (status === 'connected') ? 'flex' : 'none';
+            } else if (filter === 'cloud') {
+              card.style.display = (type === 'cloud') ? 'flex' : 'none';
+            } else if (filter === 'local') {
+              card.style.display = (type === 'local') ? 'flex' : 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-low/85 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.35)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="chat" href="#"><span class="material-symbols-outlined text-[22px]">chat_bubble</span><span class="font-label-md text-label-md">Chat</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] transition-colors text-primary font-semibold" data-path="provider" href="#"><span class="material-symbols-outlined text-[22px]">neurology</span><span class="font-label-md text-label-md">Provider</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[22px]">settings</span><span class="font-label-md text-label-md">Pengaturan</span></a></div></nav>
+
+</body></html>

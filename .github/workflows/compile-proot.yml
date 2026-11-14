@@ -1,0 +1,43 @@
+name: compile-proot
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/build-proot-android.sh'
+      - '.github/workflows/compile-proot.yml'
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build deps
+        run: sudo apt-get update && sudo apt-get install -y make git file
+
+      - name: Download NDK
+        # NDK 25.2.9519752 (bundled with AGP 8.2+)
+        run: |
+          curl -Lo ndk.zip https://dl.google.com/android/repository/android-ndk-r25b-linux.zip
+          mkdir -p ndk
+          unzip -q ndk.zip -d ndk/
+
+      - name: Build proot for arm64
+        env:
+          NDK: ${{ github.workspace }}/ndk/android-ndk-r25b
+          REPO_ROOT: ${{ github.workspace }}
+        run: |
+          chmod +x scripts/build-proot-android.sh
+          ./scripts/build-proot-android.sh
+
+      - name: Verify binary
+        run: |
+          file app/src/main/assets/proot/proot
+          test -s app/src/main/assets/proot/proot
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: proot-arm64
+          path: app/src/main/assets/proot/proot

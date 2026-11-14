@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Plus Jakarta Sans font family definition lives in res/font/plus_jakarta_sans.xml
+      (font-family resources must reside in res/font/, not res/values/).
+
+      This file is kept at res/values/fonts.xml per the task plan. It references
+      R.font.plus_jakarta_sans, whose weight mapping (400 / 600 / 700 / 800) is
+      defined in res/font/plus_jakarta_sans.xml. The Plus Jakarta Sans TTF files
+      are not bundled; PastelClayTheme falls back to FontFamily.Default (sans-serif)
+      so the app will not crash without them.
+    -->
+</resources>
